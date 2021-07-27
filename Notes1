@@ -1,0 +1,46 @@
+Linux Fundamentals 1
+
+Linux is just another OS (Operating System) and is open source. Linux is based off of UNIX (another operating system. It’s an umbrella term for multiple OS’s that are based off UNIX. Linux has many different versions/distros.
+
+Ubuntu & Debian are some more well known distress of Linux. Ubuntu & Debian can be run as a server such as websites & web apps or fully-fledged desktop. Ubuntu can be run on systems with only 512MB of RAM, making it really powerful for its size.
+
+Before we get started, just know that Linux can be very intimidating because most of us are so used to using a GUI to navigate an operating system. The more you work with the more common commands, the easier it becomes.
+
+FIRST FEW COMMANDS BELOW:
+
+echo: prints out the text you provide.
+
+whoami: find out the user your currently logged in as.
+
+Interacting with the filesystem:
+
+ls: listing files.
+
+cd: change directory. cd~ will take you back to the root directory.
+
+cat: (concatenate) cat todo.txt would print out the contents/text in the file.
+
+pwd: print working directory.
+
+find: can be used to find a file that you remember the name too.      
+        find -name password.txt or find -name *.txt to find all ending
+        in .txt.
+
+grep: used to search contents of a file for specific values.
+
+
+SHELL OPERATORS:
+
+&: this operator allows us to run commands in the background of
+    our terminal.
+
+&&: allows us to combine multiple commands together in one line
+       of our terminal. command1 && command2.
+
+>: this operator is a redirect- meaning we can take the output
+    from the command (such as using cat to output a file) and
+    direct it elsewhere.
+
+>>: this operator does the same function of the > operator but
+      appends the output rather than replacing (meaning nothing is
+      overwritten).
