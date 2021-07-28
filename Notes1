@@ -1,4 +1,4 @@
-Linux Fundamentals 1
+Linux Fundamentals:
 
 Linux is just another OS (Operating System) and is open source. Linux is based off of UNIX (another operating system. It’s an umbrella term for multiple OS’s that are based off UNIX. Linux has many different versions/distros.
 
@@ -22,12 +22,35 @@ cat: (concatenate) cat todo.txt would print out the contents/text in the file.
 
 pwd: print working directory.
 
+man: used to access documentation (Manual).
+
 find: can be used to find a file that you remember the name too.      
         find -name password.txt or find -name *.txt to find all ending
         in .txt.
 
 grep: used to search contents of a file for specific values.
 
+touch: create a file.
+
+mkdir: make directory (create a folder).
+
+cp: copy file or folder.
+
+mv: move file or folder.
+
+rm: remove file.
+
+rm -R: remove a directory or folder.
+
+file: determine type of file.
+
+
+Permissions:
+Switching Between Users: The difference between Users and Groups
+
+Su: (sudo) using root permissions through sudo. For switching between users you are required to know two things to facilitate this transition of users accounts:
+The user we wish to switch too.
+The users password.
 
 SHELL OPERATORS:
 
@@ -44,3 +67,85 @@ SHELL OPERATORS:
 >>: this operator does the same function of the > operator but
       appends the output rather than replacing (meaning nothing is
       overwritten).
+
+||: or operator (acts like else in programming).
+
+
+
+Linux Fundamentals 2
+
+What is SSH? Secure Shell is the means of connecting too and interacting with the command line of a remote Linux machine. Where input is encrypted and unencrypted once it reaches the remote machine.
+
+The syntax for SSH is very simple. We only need to provide two things:
+The IP address of the remote machine.
+Correct credentials to a valid account to login in with on the remote machine.
+
+Example: 
+ssh username@MACHINE_IP 
+
+             
+ FLAGS & SWITCHES (used to advance commands)
+We can use flags and switches to extend the behavior of our commands.
+
+-a to get all hidden files.
+
+-help, -h this option will list the possible options that the
+     command accepts, provide a brief description and example of 
+     its use.
+
+-f use to force close or force a command.
+
+-l shows permissions. Example is: ls -l or ls -la
+
+     
+
+
+
+Common Directories:
+
+/etc: This root directory is one of the most important root
+        directories on your system. The etc folder (short for etcetera)
+        is a commonplace location to store system files that are 
+        used by your operating system.
+
+/var: This folder stores data that is frequently accessed or written
+         by services or applications running on the system. For
+         example, log files from running services and applications
+         are written here (/var/log), or other data that is not
+         necessarily associated with a specific user (i.e., databases
+         and the like).
+
+/root: Unlike the /home directory, the /root folder is actually the
+          home for the "root" system user. There isn't anything more
+          to this folder other than just understanding that this is the
+          home directory for the "root" user. But, it is worth a
+          mention as the logical presumption is that this user would
+          have their data in a directory such as "/home/root" by
+          default.
+
+/tmp: This is a unique root directory found on a Linux install.
+          Short for "temporary", the /tmp directory is volatile and is
+          used to store data that is only needed to be accessed
+          once or twice. Similar to the memory on your computer,
+          once the computer is restarted, the contents of this folder
+          are cleared out.
+
+/var/log directory: these files and folders contain logging
+         information for applications and services running on your
+         system. The Operating System  (OS) has become pretty
+         good at automatically managing these logs in a process
+         that is known as “rotating".
+Commonly hacked Ports:
+
+Common ports, such as TCP port 80 (HTTP), may be locked down — but other ports may get overlooked and be vulnerable to hackers. In your security tests, be sure to check these commonly hacked TCP and UDP ports:
+TCP port 21 — FTP (File Transfer Protocol) 
+TCP port 22 — SSH (Secure Shell) 
+TCP port 23 — Telnet 
+TCP port 25 — SMTP (Simple Mail Transfer Protocol) 
+TCP and UDP port 53 — DNS (Domain Name System) 
+TCP port 443 — HTTP (Hypertext Transport Protocol) and HTTPS (HTTP over SSL) 
+TCP port 110 — POP3 (Post Office Protocol version 3) 
+TCP and UDP port 135 — Windows RPC 
+TCP and UDP ports 137–139 — Windows NetBIOS over TCP/IP 
+TCP port 1433 and UDP port 1434 — Microsoft SQL Server 
+Part of Hacking For Dummies Cheat Sheet
