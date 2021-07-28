@@ -24,6 +24,10 @@ pwd: print working directory.
 
 man: used to access documentation (Manual).
 
+wget: This command allows us to download files from the web
+          via HTTP as if we were accessing the file from inside a
+          browser.
+
 find: can be used to find a file that you remember the name too.      
         find -name password.txt or find -name *.txt to find all ending
         in .txt.
